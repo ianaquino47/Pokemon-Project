@@ -1,0 +1,25 @@
+@use './colors';
+@use './main-container';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2p', sans-serif;
+}
+
+body {
+  background-color: #eff3ff;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  @include flexCenter();
+  height: 100vh;
+  width: 100vw;
+}
