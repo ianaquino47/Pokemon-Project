@@ -61,7 +61,9 @@ function App() {
                   value={query}
                   onChange={handleChange}
                 />
-                <button type="submit">Submit</button>
+                <button className="submit-button" type="submit">
+                  Submit
+                </button>
               </div>
             </form>
           </div>
