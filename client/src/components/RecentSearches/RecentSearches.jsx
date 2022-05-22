@@ -1,3 +1,5 @@
+import React from 'react';
+
 const RecentSearches = ({ recent, submit, setQuery }) => {
   const handleClick = (value) => async () => {
     await setQuery(value);

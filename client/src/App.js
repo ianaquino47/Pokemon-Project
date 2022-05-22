@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { PokemonDetails } from './components/PokemonDetails';
+import PokemonDetails from './components/PokemonDetails';
 import PokemonNotFound from './components/PokemonNotFound';
 import { getPokemonData } from './components/utils.js/getPokemonData';
 import RecentSearches from './components/RecentSearches';

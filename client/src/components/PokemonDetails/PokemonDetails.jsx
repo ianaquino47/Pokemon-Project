@@ -1,11 +1,11 @@
 import React from 'react';
-import LegendaryBadge from '../assets/legendary.png';
+import LegendaryBadge from '../../assets/legendary.png';
 
-export const PokemonDetails = ({ data }) => {
-  const { name, description, is_legendary, sprites, type } = data;
+const PokemonDetails = ({ data }) => {
+  const { name, description, is_legendary, sprites, type } = data || {};
   const pokemonType = is_legendary ? 'name legendary' : `name ${type}`;
   return (
-    Object.keys(data).length > 0 && (
+    data && Object.keys(data)?.length > 0 && (
       <div className="details-container">
         <div className="header">
           {name && <h3 className={pokemonType}>{name}</h3>}
@@ -29,3 +29,5 @@ export const PokemonDetails = ({ data }) => {
     )
   );
 };
+
+export default PokemonDetails

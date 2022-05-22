@@ -1,6 +1,6 @@
 const pokemonApiCall = async (pokemon) => {
   const response = await fetch(`/pokemon/${pokemon}`);
-  if (!response.ok) {
+  if (!response?.ok) {
     throw new Error(`An error has occurred: ${response.status}`);
   }
   const pokemonData = await response.json();
@@ -20,4 +20,4 @@ const getPokemonData = async (query) => {
   return data;
 };
 
-export { getPokemonData };
+export { getPokemonData, pokemonApiCall };
