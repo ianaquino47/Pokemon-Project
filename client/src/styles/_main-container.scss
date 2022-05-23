@@ -6,6 +6,7 @@
 
 .main-container {
   display: flex;
+  justify-content: flex-start;
   gap: 2em;
 
   .left-container {
@@ -80,12 +81,17 @@
         }
       }
     }
+
+    @media screen and (max-width: 800px) {
+      gap: 0.5em;
+      height: 60vh;
+      width: 90vw;
+    }
   }
 
   .right-container {
-    margin: auto;
     width: 375px;
-    height: 575px;
+    height: 325px;
     display: flex;
     flex-direction: column;
 
@@ -94,12 +100,30 @@
       flex-direction: column;
     }
     .search-header {
-      margin-top: 0.5em;
-      margin-bottom: 2.5em;
+      margin-top: 0.15em;
+      margin-bottom: 3em;
     }
     .search-item {
       margin-bottom: 2em;
       height: 2em;
     }
+
+    @media screen and (max-width: 800px) {
+      .search-header {
+        margin-bottom: 2em;
+        text-align: center;
+      }
+      .search-item {
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
   }
 }
