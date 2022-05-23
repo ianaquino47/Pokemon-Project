@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/App.js",
+    "start": "nodemon api/App.js",
     "build": "cd client && npm install && npm run build",
     "test": "jest"
   },
