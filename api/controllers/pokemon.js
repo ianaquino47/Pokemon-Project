@@ -31,6 +31,7 @@ const getPokemon = async (req, res) => {
       sprites,
       type,
     };
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.send(pokemonData);
   } catch (error) {
     if (error.response) {

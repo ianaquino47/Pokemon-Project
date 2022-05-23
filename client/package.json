@@ -38,8 +38,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001/",
   "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
     "cypress": "^9.6.1",
     "eslint-plugin-cypress": "^2.12.1",
     "identity-obj-proxy": "^3.0.0"

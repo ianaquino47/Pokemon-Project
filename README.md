@@ -8,28 +8,25 @@ This is a full-stack project built with React on the front-end and Node/Express 
 
 ## Table of Contents (Optional)
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
 - [Installation](#installation)
 
-- [Usage](#usage)
-
-- [Credits](#credits)
-
-- [License](#license)
+- [Tests](#usage)
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-```md
-![alt text](assets/images/screenshot.png)
-```
+1.  (Install) Run Docker Desktop.
+2.  Clone repo and cd into Pokemon-Project.
+3.  Go to your terminal and run
+    docker-compose up
+4.  Once the containers are running, go to http://localhost:3000/ to see the app!
 
 ## Tests
+
+- Front-End Tests
+  - cd into the **_client_** folder
+  - run **_npm install_**
+  - run **_npm run tests_** (for unit tests) and **_npm run e2e-test_** (for cypress tests)
+- Back-End Tests
+  - cd into the **_api_** folder
+  - run **_npm install_**
+  - run **_npm run tests_** (for unit tests)

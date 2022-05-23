@@ -1,5 +1,5 @@
 const pokemonApiCall = async (pokemon) => {
-  const response = await fetch(`/pokemon/${pokemon}`);
+  const response = await fetch(`http://localhost:3001/pokemon/${pokemon}`);
   if (!response?.ok) {
     throw new Error(`An error has occurred: ${response.status}`);
   }
@@ -17,6 +17,7 @@ const getPokemonData = async (query) => {
     sprites,
     type,
   };
+
   return data;
 };
 
